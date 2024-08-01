@@ -28,6 +28,15 @@ button {
     width: 100px;
 }
 
+#result, #tipAmount {
+    background-color: rgb(238, 221, 221);
+    font-weight: bold;
+}
+
+#billTotal, #tipPercent, #split {
+    font-weight: bold;
+}
+
 @media (max-width: 500px) {
     #tipForm, div {
         display: flex;
