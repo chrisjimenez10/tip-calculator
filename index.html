@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="app.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+
+    <form id="tipForm">
+        <label for="billTotal">Total: </label>
+        <input type="number" step=".01" min="0" id="billTotal"  placeholder="$0.00" required>
+
+        <label for="tipPercent">Tip: </label>
+        <input type="number" step=".01" min="0" id="tipPercent" placeholder="0%" required>
+
+        <label for="split">Split: </label>
+        <input type="number" step="1" min="1" id="split" required>
+
+        <button type="submit">=</button>
+
+    </form>
+
+    <div id="resultContainer">
+        <label for="result">Final Bill: </label>
+        <input type="number" id="result" readonly>
+
+        <label for="tipAmount">Tip Amount: </label>
+        <input type="number" id="tipAmount" readonly>
+        
+        <button id="clear">C</button>
+    </div>
+
+    <p>Gratuity is never expected, but always appreciated!</p>
+    <hr />
+</body>
+</html>
